@@ -1,40 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Ubuntu+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Handjet:wght@100..900&family=Ubuntu+Condensed&display=swap');
 
-body {
-    /* overflow-x: hidden; */
+.container {
+    display: grid;
+    grid-template-areas: 
+        'heading'
+        'secondary_content'
+        'links'
+        'footer';
+    gap: 10px;
 }
-.page1 {
-    padding-top: 60px;
-    margin-right: 2px;
-    text-align: center; 
+
+.fieldset_footer {
+    margin: 1px;
 }
-.profile {
-    display: flex;
-    align-items: center; 
-    margin-left: 310px;
-    margin-top: -16px;
-    margin-bottom: 14px;
+
+@media (max-width: 767px){
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "heading"
+            "links"
+            "secondary_content"
+            "footer";
+    }
 }
-.name {
-    font-family: "Baskervville SC", serif;
-    font-size: 70px;
-    color: rgb(255, 251, 246);
-    text-decoration: underline;
-    margin-right: 40px;
-    font-weight: 500;
+
+@media (min-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "heading"
+            "links"
+            "secondary_content"
+            "footer";
+    }
 }
+
+@media (min-width: 1024px){
+    .container{
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "heading"
+            "links"
+            "secondary_content"
+            "footer";
+    }
+}
+
+.heading {
+    grid-area: heading;
+    grid-column: 1 / span2;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+
 .face_pic {
     height: auto;
-    width: 510px;
+    width: 400px;
     border-radius: 50%;
     border: 5px solid #f7f7f7;
 }
+
 .body_index {
     background-image: url(https://images3.alphacoders.com/830/thumb-1920-83067.jpg);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
+}
+.links {
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.links a {
+    padding: 10px;
+    margin: 5px 0;
+    color: white;
+}
+.footer {
+    /* grid-area: footer; */
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    grid-column: span 2;
+    text-align: center;
+    font-family: "Baskervville SC", serif;
 }
 .vid {
     margin-left: 150px;
@@ -53,6 +105,7 @@ ul {
 }
 .page2 {
     display: flex;
+    gap: 10px;
     padding-bottom: 20px;
 }
 .about_me {
