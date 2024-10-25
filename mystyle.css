@@ -161,14 +161,27 @@ a {
     padding: 50px;
 }
 
-.body_journey, .body_future {
+.body_journey {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: black;
+}
+.body_future {
+    display: flex;
+    flex-direction: column;
     background-color: black;
 }
 .Year {
     padding: 50px;
     text-align: left;
+    line-height: 1.5;
 }
 .future_content {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 30px;
+    line-height: 1.5;
+}
+.journey_journey {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
 }
