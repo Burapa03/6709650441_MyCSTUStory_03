@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Handjet:wght@100..900&family=Ubuntu+Condensed&display=swap');
+
+body {
+    /* overflow-x: hidden; */
+}
+.page1 {
+    padding-top: 60px;
+    margin-right: 2px;
+    text-align: center; 
+}
+.profile {
+    display: flex;
+    align-items: center; 
+    margin-left: 310px;
+    margin-top: -16px;
+    margin-bottom: 14px;
+}
+.name {
+    font-family: "Baskervville SC", serif;
+    font-size: 70px;
+    color: rgb(255, 251, 246);
+    text-decoration: underline;
+    margin-right: 40px;
+    font-weight: 500;
+}
+.face_pic {
+    height: auto;
+    width: 510px;
+    border-radius: 50%;
+    border: 5px solid #f7f7f7;
+}
+.body_index {
+    background-image: url(https://images3.alphacoders.com/830/thumb-1920-83067.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.vid {
+    margin-left: 150px;
+    margin-top: 35px;
+    height: auto;
+    width: 402px;
+    border: 2px solid #ffffff; 
+    border-radius: 10px; 
+    box-sizing: border-box;
+    object-fit: cover;
+}
+ul {
+    font-size: 30px;
+    color: azure;
+    position: relative;
+}
+.page2 {
+    display: flex;
+    padding-bottom: 20px;
+}
+.about_me {
+    margin-top: 20px;
+    padding-bottom: 1px;
+    margin-left: 5px;
+    background-color: rgba(188, 181, 181, 0.1);
+}
+.intro {
+    color: #f7f7f7;
+    font-size: 30px;
+    text-decoration: none !important;
+}
+legend {
+    color: #f7f7f7;
+    font-size: 45px;
+}
+.contact {
+    margin-top: 20px;
+    background-color: rgb(188, 181, 181, 0.1);
+}
+.line1 {
+    position: absolute;
+    color: #f7f7f7;
+    margin-top: 250px;
+    margin-left: -60px;
+    font-size: 30px;
+    font-family: "Handjet", sans-serif;
+}
+.line2 {
+    position: absolute;
+    color: #f7f7f7;
+    margin-top: 340px;
+    /* margin-left: -60px; */
+    margin-left:68px;
+    font-size: 30px;
+    font-family: "Handjet", sans-serif;
+}
+
+.Head_J {
+    font-size: 70px;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+.Head_F {
+    font-size: 60px;
+    color: #f7f7f7;
+}
+
+a {
+    font-size: 30px;
+    padding: 50px;
+}
+
+.body_journey, .body_future {
+    background-color: black;
+}
+.Year {
+    padding: 50px;
+    text-align: left;
+}
+.future_content {
+    color: #ffffff;
+    font-size: 40px;
+}
