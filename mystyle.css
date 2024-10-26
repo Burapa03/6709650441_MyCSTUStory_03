@@ -199,9 +199,6 @@ a {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: black;
-    grid-area: 
-        "Head_J Year"
-        "journey_homepage";
 }
 .body_future {
     display: flex;
@@ -219,8 +216,4 @@ a {
     line-height: 1.5;
     margin-left: 55px;
     margin-right: 55px;
-}
-.journey_homepage {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
 }
